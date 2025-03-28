@@ -1,0 +1,29 @@
+{
+  "name": "playwright-orangehrm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@playwright/test": "^1.51.1",
+    "install": "^0.13.0",
+    "playwright": "^1.51.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@types/node": "^22.13.14",
+    "allure-commandline": "^2.33.0",
+    "allure-cucumberjs": "^3.2.1",
+    "allure-playwright": "^3.2.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
