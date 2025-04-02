@@ -33,6 +33,10 @@ Para este reto, se propone investigar y utilizar Playwright, una herramienta de 
    ```bash
    npm ci 
 
+4. Instala los navegadores soportados por Playwright
+   ```bash
+   npm playwright install 
+
 ## Ejecución de las Pruebas
 
 El proyecto cuenta con comandos específicos para ejecutar distintos escenarios de prueba, utilizando etiquetas para filtrar los casos deseados. A continuación se muestran los comandos disponibles:
