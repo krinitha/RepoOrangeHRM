@@ -1,19 +1,22 @@
 {
   "name": "playwright-orangehrm",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-dev-login": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @user_login",
+    "test-dev-newemployer": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @new_employee",
+    "test-dev": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js",
+    "test-uat": "cross-env ENV=uat BROWSER=chrome cucumber-js --config=config/cucumber.js",
+    "test-firefox": "cross-env ENV=dev BROWSER=firefox cucumber-js --config=config/cucumber.js",
+    "test-webkit": "cross-env ENV=dev BROWSER=webkit cucumber-js --config=config/cucumber.js",
+    "posttest-dev": "npx ts-node src/helper/report.ts",
+    "posttest-uat": "npx ts-node src/helper/report.ts",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@playwright/test": "^1.51.1",
-    "install": "^0.13.0",
-    "playwright": "^1.51.1"
-  },
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "@types/node": "^22.13.14",
@@ -22,8 +25,10 @@
     "allure-playwright": "^3.2.1",
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.7",
-    "multiple-cucumber-html-reporter": "^3.9.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "@playwright/test": "^1.51.1",
+    "playwright": "^1.51.1",
+    "multiple-cucumber-html-reporter": "^3.9.2"
   }
 }
