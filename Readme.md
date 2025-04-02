@@ -18,6 +18,7 @@ Para este reto, se propone investigar y utilizar Playwright, una herramienta de 
 
 - Node.js v18.17.1
 - npm v9.6.7
+- npx v9.6.7
 
 ## Instalación
 
@@ -35,7 +36,7 @@ Para este reto, se propone investigar y utilizar Playwright, una herramienta de 
 
 4. Instala los navegadores soportados por Playwright
    ```bash
-   npm playwright install 
+   npx playwright install 
 
 ## Ejecución de las Pruebas
 
