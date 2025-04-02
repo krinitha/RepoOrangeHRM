@@ -59,15 +59,15 @@ export default class PimPage{
     async setLicense(license, expirationDate) {
         await global.page.waitForSelector(this.Elements.numLicencia);
         await global.page.type(this.Elements.numLicencia, license);
-        // const bb = await global.page.waitForSelector(this.Elements.fecExpLicencia);
-        // await global.page.click(this.Elements.fecExpLicencia);
-        // await global.page.type(this.Elements.fecExpLicencia, expirationDate);
+        const bb = await global.page.waitForSelector(this.Elements.fecExpLicencia);
+        await global.page.click(this.Elements.fecExpLicencia);
+        await global.page.fill(this.Elements.fecExpLicencia, expirationDate);
     }
 
     async setBirthday(birthDate) {
-        // await global.page.waitForSelector(this.Elements.dateBirth);
-        // await global.page.click(this.Elements.dateBirth);
-        // await global.page.type(this.Elements.dateBirth, birthDate);
+        await global.page.waitForSelector(this.Elements.dateBirth);
+        await global.page.click(this.Elements.dateBirth);
+        await global.page.type(this.Elements.dateBirth, birthDate);
         await global.page.waitForTimeout(2000);
     }
 

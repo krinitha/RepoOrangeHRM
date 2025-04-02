@@ -32,7 +32,7 @@ When(`obtiene el ID del empleado`, async ()=> {
     await pimPage.getEmployeeId();
 })
 
-When(`presiona el botón "Guardar"`, async ()=> {
+When(`presiona el botón "Guardar" para registrar al nuevo empleado`, async ()=> {
     await pimPage.saveEmployee();
 })
 
@@ -44,7 +44,7 @@ When('ingresa la fecha de nacimiento {string}', async (birthDate)=> {
     await pimPage.setBirthday(birthDate);     
 })
 
-When(`se debe presionar el botón "Guardar"`, async ()=> {
+When(`presionar el botón "Guardar" para actualizar los detalles personales`, async ()=> {
     await pimPage.saveDetails();
 })
 

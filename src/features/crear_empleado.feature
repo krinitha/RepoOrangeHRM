@@ -8,8 +8,8 @@ Scenario: Crear empleado
    And selecciona la opción "Añadir nuevo empleado"
    And ingresa el primer nombre "Katty", segundo nombre "Liam" y apellido "Mass"
    And obtiene el ID del empleado
-   And presiona el botón "Guardar"
+   And presiona el botón "Guardar" para registrar al nuevo empleado
    And en la sección "Detalles Personales", ingresa la licencia de conducir "L987654321" con fecha de expiración "2025-01-03"
    And ingresa la fecha de nacimiento "1992-04-15"
-   And se debe presionar el botón "Guardar"   
+   And presionar el botón "Guardar" para actualizar los detalles personales  
    Then regresa a la pantalla de PIM y busca que exista el empleado con el "CODE ID"
