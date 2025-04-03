@@ -44,13 +44,24 @@ El proyecto cuenta con comandos específicos para ejecutar distintos escenarios 
 
 ### Pruebas de Inicio de Sesión
 
-Para ejecutar las pruebas relacionadas con el flujo de **inicio de sesión**, utiliza:
+Para ejecutar las pruebas relacionadas con el flujo de "**Inicio de Sesión**", utiliza:
 
-    npm run test-dev-login
+    npm run test-dev-user-login
 
-### Pruebas de Creación de Empleado
+### Pruebas de Crear perfil de empleado
 
-Para ejecutar las pruebas relacionadas con el flujo de **Creacion de empleado**, utiliza:
+Para ejecutar las pruebas relacionadas con el flujo de "**Crear perfil de empleado**", utiliza:
 
-    npm run test-dev-newemployer
+    npm run test-dev-employee-new
 
+### Pruebas de Edición del perfil del Empleado
+
+Para ejecutar las pruebas relacionadas con el flujo de "**Edición del perfil del Empleado**", utiliza:
+
+    npm run test-dev-employee-edit
+
+### Pruebas de Busqueda de empleados en el módulo PIM
+
+Para ejecutar las pruebas relacionadas con el flujo de "**Busqueda de empleados en el módulo PIM**", utiliza:
+
+    npm run test-dev-pim-search

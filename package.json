@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-dev-login": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @user_login",
-    "test-dev-newemployer": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @new_employee",
+    "test-dev-user-login": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @user_login",
+    "test-dev-employee-new": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @employee_new",
+    "test-dev-employee-edit": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @employee_edit",
+    "test-dev-pim-search": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js --tags @pimEmployee_search",
     "test-dev": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js",
     "test-uat": "cross-env ENV=uat BROWSER=chrome cucumber-js --config=config/cucumber.js",
     "test-firefox": "cross-env ENV=dev BROWSER=firefox cucumber-js --config=config/cucumber.js",
